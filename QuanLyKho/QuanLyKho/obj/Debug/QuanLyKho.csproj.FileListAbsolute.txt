@@ -20,3 +20,5 @@ Z:\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.csproj.CopyComple
 Z:\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.exe
 Z:\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.pdb
 Z:\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\App.baml
+Z:\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\GeneratedInternalTypeHelper.g.cs
+Z:\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\ResourceXAML\MainResource.baml

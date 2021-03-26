@@ -20,6 +20,7 @@ namespace QuanLyKho
     /// </summary>
     public partial class MainWindow : Window
     {
+        //http://materialdesigninxaml.net/winfx/xaml/themes
         public MainWindow()
         {
             InitializeComponent();
