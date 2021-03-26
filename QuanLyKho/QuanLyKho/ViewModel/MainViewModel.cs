@@ -9,9 +9,16 @@ namespace QuanLyKho.ViewModel
 {
     class MainViewModel:BaseViewModel
     {
+        public bool Isloaded = false;
         public MainViewModel()
         {
-            MessageBox.Show("Nguyen Thanh dat");
+            if (!Isloaded)
+            {
+                Isloaded = true;
+                LoginWindow loginWindow = new LoginWindow();
+                loginWindow.ShowDialog();
+            }
+            
         }
     }
 }

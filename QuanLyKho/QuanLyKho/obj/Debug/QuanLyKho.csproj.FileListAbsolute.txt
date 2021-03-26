@@ -22,3 +22,5 @@ Z:\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.pdb
 Z:\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\App.baml
 Z:\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\GeneratedInternalTypeHelper.g.cs
 Z:\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\ResourceXAML\MainResource.baml
+Z:\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\LoginWindow.g.cs
+Z:\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\LoginWindow.baml
