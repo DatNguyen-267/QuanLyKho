@@ -4,6 +4,7 @@
 		xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
 		xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 		xmlns:local="clr-namespace:QuanLyKho"
+        xmlns:uc="clr-namespace:QuanLyKho.UserControlQLK"
 		mc:Ignorable="d"
 		Title="LoginWindow" Height="300" Width="400"
 		 xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
@@ -13,9 +14,15 @@
 			TextOptions.TextFormattingMode="Ideal"
 			TextOptions.TextRenderingMode="Auto"
 			Background="{DynamicResource MaterialDesignPaper}"
-			FontFamily="{DynamicResource MaterialDesignFont}">
+			FontFamily="{DynamicResource MaterialDesignFont}"
+        Name="loginWindow">
 	<Grid>
-		<materialDesign:Card
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+		<materialDesign:Card Grid.Row="1"
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             Height="200"
@@ -39,10 +46,11 @@
                 </Grid>
                 <Grid Grid.Row="1">
                     <PasswordBox
-  x:Name="PasswordBox"
-  materialDesign:HintAssist.Hint="Mật Khẩu"
-  materialDesign:TextFieldAssist.HasClearButton="True"
-  materialDesign:HintAssist.HelperText="At least 8 characters" />
+  x:Name="FloatingPasswordBox"
+  materialDesign:HintAssist.Hint="Floating Password"
+  materialDesign:HintAssist.Foreground="Green"
+  materialDesign:TextFieldAssist.UnderlineBrush="Green"
+  Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" />
                 </Grid>
                 <Grid Grid.Row="2">
                     
@@ -63,5 +71,8 @@
                 </Grid>
             </Grid>
         </materialDesign:Card>
-	</Grid>
+        <Grid Grid.Row="0">
+            <uc:ControlBarUC Tag="{Binding Title, ElementName=loginWindow}"></uc:ControlBarUC>
+        </Grid>
+    </Grid>
 </Window>

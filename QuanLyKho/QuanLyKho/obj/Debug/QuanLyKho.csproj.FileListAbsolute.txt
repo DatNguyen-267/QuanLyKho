@@ -24,3 +24,9 @@ Z:\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\GeneratedInternalTypeHelper
 Z:\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\ResourceXAML\MainResource.baml
 Z:\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\LoginWindow.g.cs
 Z:\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\LoginWindow.baml
+Z:\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\UserControlQLK\ControlBarUC.g.cs
+Z:\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\UserControlQLK\ControlBarUC.baml
+Z:\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\bin\Debug\Microsoft.Expression.Interactions.dll
+Z:\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\bin\Debug\System.Windows.Interactivity.dll
+Z:\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\bin\Debug\Microsoft.Expression.Interactions.xml
+Z:\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\bin\Debug\System.Windows.Interactivity.xml
