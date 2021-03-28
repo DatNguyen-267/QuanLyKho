@@ -24,6 +24,11 @@
         </i:EventTrigger>
     </i:Interaction.Triggers>
     <Grid>
-        <uc:ControlBarUC Tag="{Binding Title, ElementName=mainWindow}"></uc:ControlBarUC>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <uc:ControlBarUC Grid.Row="0" Tag="{Binding Title, ElementName=mainWindow}"></uc:ControlBarUC>
+        <Grid Grid.Row="1"></Grid>
     </Grid>
 </Window>
