@@ -17,7 +17,8 @@
             Background="{DynamicResource MaterialDesignPaper}"
             FontFamily="{DynamicResource MaterialDesignFont}"
         DataContext="{StaticResource MainVM}"
-        Name="mainWindow">
+        Name="mainWindow"
+        WindowStartupLocation="CenterScreen">
     <i:Interaction.Triggers>
         <i:EventTrigger EventName="Loaded">
             <i:InvokeCommandAction Command="{Binding LoadedWindowCommand}" ></i:InvokeCommandAction>
@@ -52,6 +53,8 @@
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition></ColumnDefinition>
                         <ColumnDefinition></ColumnDefinition> 
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
                         <ColumnDefinition></ColumnDefinition>
                         <ColumnDefinition></ColumnDefinition>
                         <ColumnDefinition></ColumnDefinition>
@@ -94,7 +97,7 @@
                         </Button>
                     </Grid>
                     <Grid Grid.Column="3">
-                        <Button ToolTip="Đơn vị đo">
+                        <Button ToolTip="Đơn vị đo" Command="{Binding UnitWindowCommand}">
                             <Grid>
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="auto"></RowDefinition>
@@ -106,13 +109,37 @@
                         </Button>
                     </Grid>
                     <Grid Grid.Column="4">
-                        <Button ToolTip="Nhà cung cấp">
+                        <Button Command="{Binding SuplierWindowCommand}" ToolTip="Nhà cung cấp">
                             <Grid>
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="auto"></RowDefinition>
                                     <RowDefinition></RowDefinition>
                                 </Grid.RowDefinitions>
                                 <TextBlock Grid.Row="0" Text="Nhà cung cấp" FontSize="18"></TextBlock>
+                                <materialDesign:PackIcon Grid.Row="1" Kind="Adjust"/>
+                            </Grid>
+                        </Button>
+                    </Grid>
+                    <Grid Grid.Column="5">
+                        <Button ToolTip="Khách hàng">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto"></RowDefinition>
+                                    <RowDefinition></RowDefinition>
+                                </Grid.RowDefinitions>
+                                <TextBlock Grid.Row="0" Text="Khách hàng" FontSize="18"></TextBlock>
+                                <materialDesign:PackIcon Grid.Row="1" Kind="Adjust"/>
+                            </Grid>
+                        </Button>
+                    </Grid>
+                    <Grid Grid.Column="6">
+                        <Button ToolTip="Người dùng">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto"></RowDefinition>
+                                    <RowDefinition></RowDefinition>
+                                </Grid.RowDefinitions>
+                                <TextBlock Grid.Row="0" Text="Người dùng" FontSize="18"></TextBlock>
                                 <materialDesign:PackIcon Grid.Row="1" Kind="Adjust"/>
                             </Grid>
                         </Button>

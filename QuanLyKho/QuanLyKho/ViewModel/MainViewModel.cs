@@ -12,16 +12,19 @@ namespace QuanLyKho.ViewModel
     {
         public bool Isloaded = false;
         public ICommand LoadedWindowCommand { get; set; }
+        public ICommand UnitWindowCommand { get; set; }
+        public ICommand SuplierWindowCommand { get; set; }
         public MainViewModel()
         {
-            LoadedWindowCommand = new RelayCommand<object>((p) => p == null ? false : true,
+            LoadedWindowCommand = new RelayCommand<object>((p) => true,
                 (p) =>
                 {
                     Isloaded = true;
                     LoginWindow loginWindow = new LoginWindow();
                     loginWindow.ShowDialog();
                 });
-
+            UnitWindowCommand = new RelayCommand<object>((p) => true,(p)=>{UnitWindow unitWindow = new UnitWindow();unitWindow.ShowDialog();});
+            SuplierWindowCommand = new RelayCommand<object>((p) => true, (p) => { SupplierWindow suplierWindow = new SupplierWindow(); suplierWindow.ShowDialog(); });
         }
     }
 }

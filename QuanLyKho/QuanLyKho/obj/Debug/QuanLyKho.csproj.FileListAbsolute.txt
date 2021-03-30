@@ -30,3 +30,7 @@ Z:\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\bin\Debug\Microsoft.Expression.Intera
 Z:\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\bin\Debug\System.Windows.Interactivity.dll
 Z:\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\bin\Debug\Microsoft.Expression.Interactions.xml
 Z:\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\bin\Debug\System.Windows.Interactivity.xml
+Z:\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\UnitWindow.g.cs
+Z:\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\UnitWindow.baml
+Z:\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\SupplierWindow.g.cs
+Z:\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\SupplierWindow.baml
