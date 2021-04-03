@@ -61,7 +61,7 @@
                     </Grid.ColumnDefinitions>
                     
                     <Grid Grid.Column="0">
-                        <Button ToolTip="Nhập Kho">
+                        <Button ToolTip="Nhập Kho" Command="{Binding InputWindowCommand}">
                             <Grid>
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="auto"></RowDefinition>
@@ -73,7 +73,7 @@
                         </Button>
                     </Grid>
                     <Grid Grid.Column="1">
-                        <Button ToolTip="Xuất Kho">
+                        <Button ToolTip="Xuất Kho" Command="{Binding OutputWindowCommand}">
                             <Grid>
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="auto"></RowDefinition>
@@ -85,7 +85,7 @@
                         </Button>
                     </Grid>
                     <Grid Grid.Column="2">
-                        <Button ToolTip="Vật Tư">
+                        <Button ToolTip="Vật Tư" Command="{Binding ObjectWindowCommand}">
                             <Grid>
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="auto"></RowDefinition>
@@ -121,7 +121,8 @@
                         </Button>
                     </Grid>
                     <Grid Grid.Column="5">
-                        <Button ToolTip="Khách hàng">
+                        <Button ToolTip="Khách hàng" 
+                                Command="{Binding CustomerWindowCommand}">
                             <Grid>
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="auto"></RowDefinition>
@@ -133,7 +134,7 @@
                         </Button>
                     </Grid>
                     <Grid Grid.Column="6">
-                        <Button ToolTip="Người dùng">
+                        <Button ToolTip="Người dùng" Command="{Binding UserWindowCommand}">
                             <Grid>
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="auto"></RowDefinition>
@@ -196,9 +197,9 @@
                             </Grid>
                             <Grid Grid.Row="2">
                                 <Grid.ColumnDefinitions>
-                                    <ColumnDefinition></ColumnDefinition>
-                                    <ColumnDefinition></ColumnDefinition>
-                                    <ColumnDefinition></ColumnDefinition>
+                                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                                    <ColumnDefinition Width="auto"></ColumnDefinition>
                                 </Grid.ColumnDefinitions>
                                 <Grid Grid.Column="0">
                                     <materialDesign:Card Margin="10"
