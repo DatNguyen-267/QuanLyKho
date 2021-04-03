@@ -47,14 +47,22 @@
                           VerticalAlignment="Center" />
                     <TextBox
                         Margin="5"
-                        Text="{Binding PriceInput,UpdateSourceTrigger=PropertyChanged}"
-                          materialDesign:HintAssist.Hint="Giá nhập"
+                        Text="{Binding PriceOutput,UpdateSourceTrigger=PropertyChanged}"
+                          materialDesign:HintAssist.Hint="Giá xuất"
                           Style="{StaticResource MaterialDesignFloatingHintTextBox}"
                           VerticalAlignment="Center" />
+                    <ComboBox 
+                        ItemsSource="{Binding Customer}"
+                        SelectedItem="{Binding SelectedCustomer,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
+                        Margin="5" VerticalAlignment="Bottom"
+                          materialDesign:HintAssist.Hint="Khách hàng"
+                          materialDesign:HintAssist.HintOpacity=".26"
+                         IsEditable="True">
+                    </ComboBox>
                     <TextBox
                         Margin="5"
                         Text="{Binding Status,UpdateSourceTrigger=PropertyChanged}"
-                          materialDesign:HintAssist.Hint="Trạng thái nhập"
+                          materialDesign:HintAssist.Hint="Trạng thái xuất"
                           Style="{StaticResource MaterialDesignFloatingHintTextBox}"
                           VerticalAlignment="Center" />
 
@@ -73,9 +81,10 @@
                         <ListView.View>
                             <GridView>
                                 <GridViewColumn Header="Vật tư" DisplayMemberBinding="{Binding object.DisplayName}"></GridViewColumn>
-                                <GridViewColumn Header="Ngày xuất" DisplayMemberBinding="{Binding Input.DataOutput}"></GridViewColumn>
+                                <GridViewColumn Header="Ngày xuất" DisplayMemberBinding="{Binding Output.DataOutput}"></GridViewColumn>
                                 <GridViewColumn Header="Số lượng" DisplayMemberBinding="{Binding Count}"></GridViewColumn>
-                                <GridViewColumn Header="Giá nhập" DisplayMemberBinding="{Binding InputPrice}"></GridViewColumn>
+                                <GridViewColumn Header="Giá xuất" DisplayMemberBinding="{Binding InputInfo.OutPrice}"></GridViewColumn>
+                                <GridViewColumn Header="Khách hàng" DisplayMemberBinding="{Binding Customer.DisplayName}"></GridViewColumn>
                                 <GridViewColumn Header="Trạng thái" DisplayMemberBinding="{Binding Status}"></GridViewColumn>
 
                             </GridView>

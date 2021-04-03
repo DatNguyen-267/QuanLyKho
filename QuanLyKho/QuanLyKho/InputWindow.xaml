@@ -53,6 +53,12 @@
                           VerticalAlignment="Center" />
                     <TextBox
                         Margin="5"
+                        Text="{Binding PriceOutput,UpdateSourceTrigger=PropertyChanged}"
+                          materialDesign:HintAssist.Hint="Giá xuất"
+                          Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+                          VerticalAlignment="Center" />
+                    <TextBox
+                        Margin="5"
                         Text="{Binding Status,UpdateSourceTrigger=PropertyChanged}"
                           materialDesign:HintAssist.Hint="Trạng thái nhập"
                           Style="{StaticResource MaterialDesignFloatingHintTextBox}"
@@ -76,6 +82,7 @@
                                 <GridViewColumn Header="Ngày nhập" DisplayMemberBinding="{Binding Input.DataInput}"></GridViewColumn>
                                 <GridViewColumn Header="Số lượng" DisplayMemberBinding="{Binding Count}"></GridViewColumn>
                                 <GridViewColumn Header="Giá nhập" DisplayMemberBinding="{Binding InputPrice}"></GridViewColumn>
+                                <GridViewColumn Header="Giá xuất" DisplayMemberBinding="{Binding OutputPrice}"></GridViewColumn>
                                 <GridViewColumn Header="Trạng thái" DisplayMemberBinding="{Binding Status}"></GridViewColumn>
   
                             </GridView>

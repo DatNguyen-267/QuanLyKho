@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Git-Project\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\
+Z:\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\
 QuanLyKho
 none
 false
 DEBUG;TRACE
-D:\Git-Project\QuanLyKho\QuanLyKho\QuanLyKho\App.xaml
+Z:\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\App.xaml
 11-1548840525
 
-18-658182938
-17-1990884606
+17184176429
+17-1755999608
 CustomerWindow.xaml;InputWindow.xaml;LoginWindow.xaml;MainWindow.xaml;ObjectWindow.xaml;OutputWindow.xaml;ResourceXAML\MainResource.xaml;SupplierWindow.xaml;UnitWindow.xaml;UserControlQLK\ControlBarUC.xaml;UserWindow.xaml;
 
-True
+False
 

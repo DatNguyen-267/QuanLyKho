@@ -80,3 +80,13 @@ D:\Git-Project\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\InputWindow.g.cs
 D:\Git-Project\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\InputWindow.baml
 D:\Git-Project\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\OutputWindow.g.cs
 D:\Git-Project\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\OutputWindow.baml
+Z:\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\CustomerWindow.g.cs
+Z:\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\InputWindow.g.cs
+Z:\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\ObjectWindow.g.cs
+Z:\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\OutputWindow.g.cs
+Z:\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\UserWindow.g.cs
+Z:\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\CustomerWindow.baml
+Z:\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\InputWindow.baml
+Z:\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\ObjectWindow.baml
+Z:\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\OutputWindow.baml
+Z:\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\UserWindow.baml
