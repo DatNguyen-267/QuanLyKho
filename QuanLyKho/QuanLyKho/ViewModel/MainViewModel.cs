@@ -21,12 +21,26 @@ namespace QuanLyKho.ViewModel
         public ICommand OutputWindowCommand { get; set; }
         public MainViewModel()
         {
-            LoadedWindowCommand = new RelayCommand<object>((p) => true,
+            LoadedWindowCommand = new RelayCommand<Window>((p) => true,
                 (p) =>
                 {
+                    // Check null
+                    if (p == null) return;
                     Isloaded = true;
+                    p.Hide();
                     LoginWindow loginWindow = new LoginWindow();
                     loginWindow.ShowDialog();
+
+                    if (loginWindow.DataContext == null) return;
+                    var loginVM = loginWindow.DataContext as LoginViewModel;
+                    if (loginVM.IsLogin)
+                    {
+                        p.Show();   
+                    }
+                    else
+                    {
+                            p.Close();
+                    }  
                 });
             UnitWindowCommand = new RelayCommand<object>((p) => true,(p)=>{UnitWindow unitWindow = new UnitWindow();unitWindow.ShowDialog();});
             SuplierWindowCommand = new RelayCommand<object>((p) => true, (p) => { SupplierWindow suplierWindow = new SupplierWindow(); suplierWindow.ShowDialog(); });

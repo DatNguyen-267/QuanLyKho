@@ -15,7 +15,10 @@
 			TextOptions.TextRenderingMode="Auto"
 			Background="{DynamicResource MaterialDesignPaper}"
 			FontFamily="{DynamicResource MaterialDesignFont}"
-        Name="loginWindow">
+        Name="loginWindow"
+        DataContext="{StaticResource LoginVM}"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        >
 	<Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"></RowDefinition>
@@ -39,7 +42,7 @@
                     <RowDefinition></RowDefinition>
                 </Grid.RowDefinitions>
                 <Grid Grid.Row="0">
-                    <TextBox
+                    <TextBox Text="{Binding UserName}"
   materialDesign:HintAssist.Hint="Tài Khoản"
   Style="{StaticResource MaterialDesignFloatingHintTextBox}"
   VerticalAlignment="Center" />
@@ -50,7 +53,15 @@
   materialDesign:HintAssist.Hint="Floating Password"
   materialDesign:HintAssist.Foreground="Green"
   materialDesign:TextFieldAssist.UnderlineBrush="Green"
-  Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" />
+  Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" >
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="PasswordChanged">
+                        <i:InvokeCommandAction Command="{Binding PasswordChangedCommand}"
+                            CommandParameter="{Binding ElementName=FloatingPasswordBox}"
+        ></i:InvokeCommandAction>
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+                    </PasswordBox>
                 </Grid>
                 <Grid Grid.Row="2">
                     
@@ -58,12 +69,16 @@
                         <ColumnDefinition></ColumnDefinition>
                         <ColumnDefinition></ColumnDefinition>
                     </Grid.ColumnDefinitions>
-                    <Button Grid.Column="0"
+                    <Button Grid.Column="0" Command="{Binding LoginCommand}"
+                            CommandParameter="{Binding ElementName=loginWindow}"
+                            IsDefault="True"
   Style="{StaticResource MaterialDesignRaisedButton}"
   ToolTip="Resource name: MaterialDesignRaisedButton"
                             Width="100"
   Content="Login" />
-                    <Button Grid.Column="1"
+                    <Button Command="{Binding CloseCommand}"
+                            CommandParameter="{Binding ElementName=loginWindow}"
+                        Grid.Column="1"
   Style="{StaticResource MaterialDesignRaisedButton}"
                             Width="100"
   ToolTip="Resource name: MaterialDesignRaisedButton"

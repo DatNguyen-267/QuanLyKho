@@ -90,3 +90,8 @@ Z:\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\InputWindow.baml
 Z:\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\ObjectWindow.baml
 Z:\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\OutputWindow.baml
 Z:\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\UserWindow.baml
+Z:\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\bin\Debug\EntityFramework.dll
+Z:\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\bin\Debug\EntityFramework.SqlServer.dll
+Z:\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\bin\Debug\EntityFramework.xml
+Z:\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\bin\Debug\EntityFramework.SqlServer.xml
+Z:\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho_Content.g.cs
