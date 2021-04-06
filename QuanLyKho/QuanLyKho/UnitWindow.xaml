@@ -14,7 +14,9 @@
             TextOptions.TextRenderingMode="Auto"
             Background="{DynamicResource MaterialDesignPaper}"
             FontFamily="{DynamicResource MaterialDesignFont}"
-        WindowStartupLocation="CenterScreen">
+        WindowStartupLocation="CenterScreen"
+        DataContext="{StaticResource UnitVM }"
+        >
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"></RowDefinition>
@@ -30,7 +32,8 @@
                 <Grid>
                         <TextBox
                         Margin="5"
-                        Text="{Binding DisplayName,UpdateSourceTrigger=PropertyChanged}"
+                        Text="{Binding DisplayName,UpdateSourceTrigger=PropertyChanged,Mode=OneWay}"
+                            
                           materialDesign:HintAssist.Hint="Tên đơn vị đo"
                           Style="{StaticResource MaterialDesignFloatingHintTextBox}"
                           VerticalAlignment="Center" />
