@@ -9,19 +9,20 @@
 
 namespace QuanLyKho.Model
 {
+    using QuanLyKho.ViewModel;
     using System;
     using System.Collections.Generic;
     
-    public partial class Unit
+    public partial class Unit : BaseViewModel
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Unit()
         {
             this.Objects = new HashSet<Object>();
         }
-    
+        private string _DisplayName { get; set; }
         public int Id { get; set; }
-        public string DisplayName { get; set; }
+        public string DisplayName { get => _DisplayName; set { _DisplayName = value; OnPropertyChanged(); } }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Object> Objects { get; set; }

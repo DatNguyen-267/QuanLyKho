@@ -32,7 +32,7 @@
                 <Grid>
                         <TextBox
                         Margin="5"
-                        Text="{Binding DisplayName,UpdateSourceTrigger=PropertyChanged,Mode=OneWay}"
+                        Text="{Binding DisplayName,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"
                             
                           materialDesign:HintAssist.Hint="Tên đơn vị đo"
                           Style="{StaticResource MaterialDesignFloatingHintTextBox}"
@@ -48,11 +48,15 @@
             </materialDesign:Card>
             <materialDesign:Card Grid.Row="2" Margin="5" VerticalAlignment="Stretch">
                 <ScrollViewer VerticalScrollBarVisibility="Auto">
-                    <ListView ItemsSource="{Binding List}" SelectedItem="{Binding SelectedItem, Mode=OneWayToSource}">
+                    <ListView ItemsSource="{Binding List}" SelectedItem="{Binding SelectedItem,
+                                UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}">
                         <ListView.View>
                             <GridView>
                                 <GridViewColumn Header="Id" DisplayMemberBinding="{Binding Id}"></GridViewColumn>
-                                <GridViewColumn Header="Tên đơn vị đo" DisplayMemberBinding="{Binding DisplayName}"></GridViewColumn>
+                                <GridViewColumn Header="Tên đơn vị đo" 
+                                                DisplayMemberBinding="{Binding DisplayName, 
+                                                UpdateSourceTrigger=PropertyChanged
+                                                , Mode=TwoWay}"></GridViewColumn>
                             </GridView>
                         </ListView.View>
                     </ListView>

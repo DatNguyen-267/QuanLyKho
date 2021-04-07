@@ -23,21 +23,43 @@ namespace QuanLyKho.ViewModel
                 }
 			} }
 		public ICommand AddCommand { get; set; }
+		public ICommand EditCommand { get; set; }
 		private string _DisplayName;
 		public string DisplayName { get => _DisplayName; set { _DisplayName = value; OnPropertyChanged(); } }
 		public UnitViewModel()
 		{
-			AddCommand = new RelayCommand<Window>((p) =>
+			List = new ObservableCollection<Unit>(DataProvider.Ins.DB.Units);
+			AddCommand = new RelayCommand<object>((p) =>
 			{
 				if (string.IsNullOrEmpty(DisplayName)) return false;
-				var displayList = DataProvider.Ins.DB.Units.Where(p => p.DisplayName == DisplayName);
-				if (displayList == null || displayList.Count() == 0) return false;
+
+				var displayList = DataProvider.Ins.DB.Units.Where(x => x.DisplayName == DisplayName);
+				if (displayList == null || displayList.Count() != 0) return false;
+
 				return true;
 			}, (p) => {
-				DataProvider.Ins.DB.Units.Add(new Unit() { DisplayName = DisplayName });
+				var unit = new Unit() { DisplayName = DisplayName };
+				DataProvider.Ins.DB.Units.Add(unit);
 				DataProvider.Ins.DB.SaveChanges();
+
+				List.Add(unit);
 			});
-			List = new ObservableCollection<Unit>(DataProvider.Ins.DB.Units);
+			EditCommand = new RelayCommand<object>((p) =>
+			{
+				if (string.IsNullOrEmpty(DisplayName) || SelectedItem == null) return false;
+
+				var displayList = DataProvider.Ins.DB.Units.Where(x => x.DisplayName == DisplayName);
+				if (displayList == null || displayList.Count() != 0) return false;
+
+				return true;
+			}, (p) => {
+				var unit = DataProvider.Ins.DB.Units.Where(x => x.Id == SelectedItem.Id).SingleOrDefault(); ;
+				unit.DisplayName = DisplayName;
+				DataProvider.Ins.DB.SaveChanges();
+
+				SelectedItem.DisplayName = unit.DisplayName;
+				
+			});
 		}
 	}
 }
