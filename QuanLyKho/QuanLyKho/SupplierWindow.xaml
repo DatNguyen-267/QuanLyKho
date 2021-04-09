@@ -14,7 +14,9 @@
             TextOptions.TextRenderingMode="Auto"
             Background="{DynamicResource MaterialDesignPaper}"
             FontFamily="{DynamicResource MaterialDesignFont}"
-        WindowStartupLocation="CenterScreen">
+        WindowStartupLocation="CenterScreen"
+        DataContext="{StaticResource SuplierVM}"
+        >
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"></RowDefinition>
@@ -82,7 +84,7 @@
                                 <GridViewColumn Header="Điện thoại" DisplayMemberBinding="{Binding Phone}"></GridViewColumn>
                                 <GridViewColumn Header="Email" DisplayMemberBinding="{Binding Email}"></GridViewColumn>
                                 <GridViewColumn Header="Thông tin thêm" DisplayMemberBinding="{Binding MoreInfo}"></GridViewColumn>
-                                <GridViewColumn Header="Ngày hợp tác" DisplayMemberBinding="{Binding ContractDate}"></GridViewColumn>
+                                <GridViewColumn Header="Ngày hợp tác" DisplayMemberBinding="{Binding ContractDate, StringFormat='dd/MM/yyyy'}"></GridViewColumn>
                             </GridView>
                         </ListView.View>
                     </ListView>
