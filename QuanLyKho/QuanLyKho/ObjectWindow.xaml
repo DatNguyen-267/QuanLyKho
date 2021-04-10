@@ -14,7 +14,9 @@
             TextOptions.TextRenderingMode="Auto"
             Background="{DynamicResource MaterialDesignPaper}"
             FontFamily="{DynamicResource MaterialDesignFont}"
-        WindowStartupLocation="CenterScreen">
+        WindowStartupLocation="CenterScreen"
+        DataContext="{StaticResource ObjectVM}"
+        >
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"></RowDefinition>
@@ -31,20 +33,23 @@
                     <TextBox
                         Margin="5"
                         Text="{Binding DisplayName,UpdateSourceTrigger=PropertyChanged}"
-                          materialDesign:HintAssist.Hint="Tên vật tư"
+                          
+                        materialDesign:HintAssist.Hint="Tên vật tư"
                           Style="{StaticResource MaterialDesignFloatingHintTextBox}"
                           VerticalAlignment="Center" />
                     <ComboBox 
                         ItemsSource="{Binding Unit}"
                         SelectedItem="{Binding SelectedUnit,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
                         Margin="5" VerticalAlignment="Bottom"
+                        DisplayMemberPath="DisplayName"
                           materialDesign:HintAssist.Hint="đơn vị đo"
                           materialDesign:HintAssist.HintOpacity=".26"
                          IsEditable="True"></ComboBox>
                     <ComboBox 
-                        ItemsSource="{Binding Splier}"
-                        SelectedItem="{Binding SelectedSplier,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
-                        Margin="5" VerticalAlignment="Bottom"
+                        ItemsSource="{Binding Suplier}"
+                        SelectedItem="{Binding SelectedSuplier,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
+                        Margin="5" VerticalAlignment="Bottom" 
+                        DisplayMemberPath="DisplayName"
                           materialDesign:HintAssist.Hint="Nhà cung cấp"
                           materialDesign:HintAssist.HintOpacity=".26"
                          IsEditable="True"></ComboBox>

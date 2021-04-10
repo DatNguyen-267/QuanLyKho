@@ -146,3 +146,8 @@ Z:\GitProject\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.Properties.Resou
 Z:\GitProject\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.csproj.GenerateResource.cache
 Z:\GitProject\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.csproj.CoreCompileInputs.cache
 Z:\GitProject\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.csproj.CopyComplete
+D:\Git-Project\QuanLyKho\QuanLyKho\QuanLyKho\bin\Debug\EntityFramework.dll
+D:\Git-Project\QuanLyKho\QuanLyKho\QuanLyKho\bin\Debug\EntityFramework.SqlServer.dll
+D:\Git-Project\QuanLyKho\QuanLyKho\QuanLyKho\bin\Debug\EntityFramework.xml
+D:\Git-Project\QuanLyKho\QuanLyKho\QuanLyKho\bin\Debug\EntityFramework.SqlServer.xml
+D:\Git-Project\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho_Content.g.cs
