@@ -72,7 +72,7 @@
                 <WrapPanel>
                     <Button Command="{Binding AddCommand}" Margin="5" Width="100">Thêm</Button>
                     <Button Command="{Binding EditCommand}" Margin="5" Width="100">Sửa</Button>
-                    <Button Command="{Binding DeleteCommand}" Margin="5" Width="100">Xóa</Button>
+                    
                 </WrapPanel>
             </materialDesign:Card>
             <materialDesign:Card Grid.Row="2" Margin="5" VerticalAlignment="Stretch">
